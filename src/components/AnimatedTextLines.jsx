@@ -26,7 +26,7 @@ const AnimatedTextLines = ({ text, className }) => {
 
   return (
     <div 
-        ref={containerRef} // ref = {el => containerRef.current = el}
+        ref={containerRef}
         className={className}
     >
         {

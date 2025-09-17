@@ -29,7 +29,6 @@ const ContactSummary = () => {
                 end: "+=800 center",
                 scrub: 0.5,
                 pin: true,
-                // pinSpacing: false
             }
         })
     })

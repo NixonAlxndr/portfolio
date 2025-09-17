@@ -9,14 +9,13 @@ const ServiceSummary = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#services-section",
-        start: "top top",       // mulai pin ketika section nyentuh atas viewport
-        end: "+=" +(4*200),  // ini nanti disesuaikan otomatis sama durasi timeline
+        start: "top top",
+        end: "+=" +(4*200),  
         scrub: true,
         pin: true,
       }
     })
 
-    // Tambahin animasi ke timeline
     tl.from("#title-service-1", { xPercent: 20 })
       .from("#title-service-2", { xPercent: -30 })
       .from("#title-service-3", { xPercent: 100 })

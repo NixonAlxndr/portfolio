@@ -25,9 +25,9 @@ const Marque = ({
             xPercents = [],
             curIndex = 0,
             pixelsPerSecond = (config.speed || 1) * 100,
-            snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+            snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1),
             totalWidth, curX, distanceToStart, distanceToLoop, item, i;
-        gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
+        gsap.set(items, {
             xPercent: (i, el) => {
                 let w = widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
                 xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / w * 100 + gsap.getProperty(el, "xPercent"));
@@ -48,10 +48,10 @@ const Marque = ({
         }
         function toIndex(index, vars) {
             vars = vars || {};
-            (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); // always go in the shortest direction
+            (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); 
             let newIndex = gsap.utils.wrap(0, length, index),
                 time = times[newIndex];
-            if (time > tl.time() !== index > curIndex) { // if we're wrapping the timeline's playhead, make the proper adjustments
+            if (time > tl.time() !== index > curIndex) { 
                 vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) };
                 time += tl.duration() * (index > curIndex ? 1 : -1);
             }
@@ -64,7 +64,7 @@ const Marque = ({
         tl.current = () => curIndex;
         tl.toIndex = (index, vars) => toIndex(index, vars);
         tl.times = times;
-        tl.progress(1, true).progress(0, true); // pre-render for performance
+        tl.progress(1, true).progress(0, true);
         if (config.reversed) {
             tl.vars.onReverseComplete();
             tl.reverse();
@@ -96,7 +96,7 @@ const Marque = ({
             },
         });
         return () => {
-            if (tl) tl.kill();   // ✅ cek dulu baru kill
+            if (tl) tl.kill();
         };
 
     }, [items, reverse]);

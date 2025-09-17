@@ -1,4 +1,3 @@
-// index.js
 export const servicesData = [
   {
     title: "FullStack Development",
