@@ -6,11 +6,11 @@ export const servicesData = [
     items: [
       {
         title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        description: "(REST/GraphQL APIs, Auth Systems)",
       },
       {
         title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        description: "(React, NextJs, TypeScript, Interactive UI/UX)",
       },
       {
         title: "Database Design",
@@ -29,11 +29,7 @@ export const servicesData = [
       },
       {
         title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
-      },
-      {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        description: "(Nginx, Load Balancing)",
       },
     ],
   },
@@ -57,17 +53,13 @@ export const servicesData = [
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "Web Apps",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web apps that users love—bridging design and functionality seamlessly.",
     items: [
       {
         title: "Cross-Platform Apps",
         description: "(Single codebase for iOS/Android/Web)",
-      },
-      {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
       },
       {
         title: "E-Commerce",
@@ -79,102 +71,62 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Mr.Coffee",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "An e-commerce site for coffee enthusiasts featuring a sleek shopping cart",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    image: "/assets/projects/mr_coffee_proj.png",
+    bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
+      { id: 1, name: "Vanilla" }
     ],
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Cocktail Landing Page",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "A landing page showcasing a variety of cocktails with vibrant images and recipes.",
     href: "",
-    image: "/assets/projects/plant-shop.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/cocktail-proj.png",
+    bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
       { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
+      { id: 2, name: "GSAP" },
+      { id: 3, name: "Tailwind CSS" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "Quick AI",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "AI-powered platform designed to deliver fast, smart, and reliable solutions — from content generation to data insights — helping users save time and work more efficiently",
     href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/quick-ai-proj.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 1, name: "React" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "Clerk" },
+      { id: 4, name: "Gemini AI" },
     ],
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "Chatty",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
+      "real-time chat application that enables seamless and instant communication",
     href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
+    image: "/assets/projects/chatty-proj.png",
+    bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Home Decor Marketplace",
-    description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
-    frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Digital Game Store",
-    description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Svelte" },
+      { id: 1, name: "React" },
       { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 3, name: "Web Socket" },
+      { id: 4, name: "Mongo DB" },
     ],
   },
 ];
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
-  {
-    name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
-  },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/nixon-alexander/" },
+  { name: "GitHub", href: "https://github.com/NixonAlxndr" },
 ];

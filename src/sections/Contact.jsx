@@ -50,12 +50,12 @@ const Contact = () => {
                         <div className="social-link">
                             <h2>E-mail</h2>
                             <div className='w-full h-px my-2 bg-white/30'></div>
-                            <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">JhonDoe@gmail.com</p>
+                            <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">nxnalexanderssk@gmail.com</p>
                         </div>
                         <div className="social-link">
                             <h2>Phone</h2>
                             <div className="w-full h-px my-2 bg-white/30"></div>
-                            <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">2389472394</p>
+                            <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">+62-858-8690-3738</p>
                         </div>
                         <div className="social-link">
                             <h2>Social Media</h2>

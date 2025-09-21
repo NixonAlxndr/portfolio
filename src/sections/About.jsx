@@ -12,12 +12,11 @@ const About = () => {
         I build scalable, high-performance solutions 
         from protoype to production
     `
-    const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-        When I’m not shipping:
-        ⚡️ Open-sourcing my latest experiment (or hacking on yours)
-        🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-        🧗 Rock climbing (problem-solving with real stakes)
-        🎸 Strumming chords while CI pipelines pass (multitasking at its finest)
+    const aboutText = `
+        Passionate about crafting lightning-fast, user-friendly apps — from sleek React interfaces to rock-solid serverless backends. To me, every line of code is more than syntax — it’s a promise of quality users can feel
+        When I’m not pushing code, you’ll probably find me:
+            ⚡ Sharing experiments in open source (or contributing to yours)
+            🧗 Tackling real-world “bugs”
         `
     const imgRef = useRef(null)
 
@@ -59,7 +58,7 @@ const About = () => {
             <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
                 <img
                     ref={imgRef}
-                    src="images/man.jpg"
+                    src="images/self.jpeg"
                     alt=""
                     className='w-md rounded-3xl'
                 />

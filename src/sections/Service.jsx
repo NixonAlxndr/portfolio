@@ -19,7 +19,7 @@ const Service = () => {
       scrollTrigger: {
         trigger: serviceWrapperRef.current,
         start: "top top",
-        end: "bottom 70%",
+        end: "bottom 60%",
         pin: true,
         scrub: 1,
         pinSpacing: false

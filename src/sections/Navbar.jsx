@@ -115,7 +115,7 @@ const Navbar = () => {
                 >
                     <div className='font-light'>
                         <p className='tracking-wider text-white/50'>E-Mail</p>
-                        <p className='tracking-widest text-xl lowercase text-pretty'>JhonDoe@gmail.com</p>
+                        <p className='tracking-widest text-xl lowercase text-pretty'>nxnalexanderssk@gmail.com</p>
                     </div>
 
                     <div className='font-light'>
